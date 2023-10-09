@@ -7,6 +7,8 @@ let num = 2000003
 // console.log(num.toLocaleString('en-IN'))
 const min = 1
 const max = 6
-console.log(Math.floor(Math.random() * (max - min + 1) + min))
-let myDate = new Date()
-console.log(myDate.toString());
+// console.log(Math.floor(Math.random() * (max - min + 1) + min))
+
+let myDate = new Date("14-02-2023")
+
+console.log(myDate.toLocaleString());
