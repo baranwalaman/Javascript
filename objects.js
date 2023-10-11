@@ -26,5 +26,25 @@ const returnedTarget = Object.assign(target, source);
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj3 = Object.assign({}, obj1, obj2)
-console.log(obj3);
+// console.log(obj3);
 
+obj4 = {...obj1, ...obj2}
+// console.log(obj4);
+
+
+//--------------------------------------------------------------------------------
+
+
+const user = {
+    name: "Naman Baranwal",
+    class: "Bcom",
+    age: 22,
+    address: "Bhadohi"
+}
+
+const {address: add} = user
+console.log(add);
+
+//json
+//random user me api
+//json formatter
