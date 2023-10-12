@@ -37,10 +37,10 @@
 
 
 
-// function calculateCartPrice(val1, val2...num){
-//     return num
-// }
-// console.log(calculateCartPrice(500, 1000, 799, 450));
+function calculateCartPrice(val1, val2, ...num){
+    return num
+}
+console.log(calculateCartPrice(500, 1000, 799, 450));
 
 
 
@@ -65,9 +65,26 @@
 
 
 
-const myArr = [2, 5, 7, 12]
-function getSecondValue(getarray){
-    console.log(getarray[1]);
+// const myArr = [2, 5, 7, 12]
+// function getSecondValue(getarray){
+//     console.log(getarray[1]);
+// }
+// // getSecondValue(myArr)
+// getSecondValue([2, 5, 7, 12])
+
+
+
+
+
+
+function addOne(num){
+    return num + 1
 }
-// getSecondValue(myArr)
-getSecondValue([2, 5, 7, 12])
+addOne(5)
+
+
+
+const addTwo = function(num){
+    return num + 2
+}
+addTwo(5)
