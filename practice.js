@@ -86,11 +86,9 @@
 
 
 
-let input1 = "Aman is a good boy"
-let input = "Aman is a good boy"
-let str = [input1, input]
-// newStr = str.replaceAll (",", " ")
-console.log(str);
+// let input1 = "Aman is a good boy"
+// newStr = input1.split(" ")
+// console.log(typeof newStr.join(' '));
 
 
 
@@ -99,3 +97,34 @@ console.log(str);
 // return newString
 // }
 // console.log(truncate_string("Robin Singh",4));
+
+
+
+
+// function abbrev_name(str){
+//  let newString = str.split(" ")
+//  if(newString.length>1){
+//     return newString[0] + " " + newString[1].charAt(0)
+//  }
+//  else{
+//     return newString[0]
+//  }
+// }
+// console.log(abbrev_name("Robin Singh"));
+
+
+
+// function protect_email(str){
+//     splitString = str.split("@")
+//     part1 = splitString[0]
+//     half = part1.length/2
+//     slicedStr = part1.slice(0, half)
+//     newString = slicedStr + "xxx@" + splitString[1]
+//     return newString
+// }
+// console.log(protect_email("amanbaranwal@example.com"));
+
+
+
+
+

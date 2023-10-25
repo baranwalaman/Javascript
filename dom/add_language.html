@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language append</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul id="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = langName
+        document.getElementById('language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+    
+
+    function optiAddLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.getElementById('language').appendChild(li)
+    }
+    optiAddLanguage("C++")
+</script>
+</html>

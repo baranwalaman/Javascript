@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password checker</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: #513737;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+        <h1>Password Checker</h1><br>
+    <form>
+        <label for="pswd">Password:</label><br>
+
+        <input type="password" name="pswd" id="pwd" placeholder="Enter your password" style="height: 25px; width: 270px;" value=""><br><br>
+
+        <label for="cnfpswd">Confirm Password:</label><br>
+
+        <input type="text" name="cnfpswd" id="cnfpwd" placeholder="Confirm Password" style="height: 25px; width: 270px;" value=""><br><br><br>
+
+        <input type="button" value="Submit" onclick="verifyPassword()" style="height: 35px; width: 70px;"><br><br>
+
+        <label for="result">Result:</label><br>
+
+        <input type="text" name="result" id="res" style="height: 25px; width: 400px;">
+    </form>
+</body>
+<script>
+    function verifyPassword(){
+        const pwd = document.getElementById('pwd').value;
+        const cnfpwd = document.getElementById('cnfpwd').value;
+
+        if(pwd===cnfpwd){
+            document.getElementById('res').style.color = "green";
+            document.getElementById('res').value = "Entered password is Correct !!!";
+        }
+        else{
+            document.getElementById('res').style.color = "red";
+            document.getElementById('res').value = "Entered password is Incorrect !!!..... Please try again.";
+        }
+    }
+</script>
+</html>
