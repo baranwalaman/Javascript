@@ -66,6 +66,7 @@ html {
   
   .guesses {
     background-color: #7a7a7a;
+    visibility: hidden;
   }
   
   #wrapper {
